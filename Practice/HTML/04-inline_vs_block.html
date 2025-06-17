@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <b>
+    <!-- 1) block inner block allow   -->
+
+    <div>
+      Hello
+      <p>this is a paragraph</p>
+    </div>
+
+    <!-- 2) block inner inline allow   -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur,
+      <i>adipisicing elit. Labore rem ipsum facilis</i> possimus deleniti
+      excepturi eum neque tempore. <span style="color: blue">Laborum</span>, eum
+      vero. Quo, accusantium maiores? Aspernatur illum ea fugit modi rem,
+      delectus <u><span style="color: red;">facilis perspiciatis</span></u> nobis perferendis,
+      <b>sed assumenda</b>, totam dicta earum corporis odit blanditiis! Commodi
+      sit earum eos distinctio sint animi?
+    </p>
+
+    <!-- 3) inline inner inline allow   -->
+
+    <u><span style="font-size: 20px; color:coral; font-weight:bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus voluptatum corrupti vero deserunt ipsam dolorem id debitis, cumque sapiente!</span></u>
+
+    <br>
+
+    <!-- 4) inline inner block not allow   -->
+
+<!-- its not corrected but show in the browser because html doesn't display any error, they give a result in any tag in content we add to html page -->
+
+    <span>hello 
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptates dolorum minus corporis qui cumque, illum veniam hic temporibus iure?</div>
+    </span>
+  </body>
+</html>
