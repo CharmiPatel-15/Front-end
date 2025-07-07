@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <a href=""><img src="/image/logo-img.png" alt="" width="100px" /></a>
+      <ul class="main-ul">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li class="list">
+          <a href="">Services <i class="fa-solid fa-angle-down"></i> </a>
+          <ul class="ul">
+            <li><a href="">Web Design</a></li>
+            <li><a href="">Marketing</a></li>
+            <li><a href="">WordPress</a></li>
+            <li class="nested-li">
+              <a href="">More <i class="fa-solid fa-angle-right"></i></a>
+              <ul class="nested-ul">
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JavaScript</a></li>
+                <li><a href="">ReactJS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Contacts</a></li>
+        <li>
+          <a href="" class="btn">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
