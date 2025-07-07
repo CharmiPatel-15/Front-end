@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip-Path</title>
+    <style>
+      section {
+        display: flex;
+        gap: 30px;
+        margin: 30px;
+      }
+      .star {
+        height: 200px;
+        width: 200px;
+        background-color: palevioletred;
+        clip-path: polygon(
+          50% 0%,
+          60% 30%,
+          100% 40%,
+          70% 60%,
+          80% 100%,
+          50% 70%,
+          20% 100%,
+          30% 60%,
+          0% 40%,
+          40% 30%
+        );
+      }
+      .triangle {
+        height: 300px;
+        width: 300px;
+        background-color: cadetblue;
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      }
+      .main {
+        height: 250px;
+        width: 250px;
+        background-color: darkkhaki;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      }
+      .main2 {
+        height: 200px;
+        width: 200px;
+        background-color: #fda280;
+        clip-path: polygon(50% 0%, 100% 40%, 80% 100%, 20% 100%, 0% 40%);
+      }
+      .main3 {
+        height: 250px;
+        width: 300px;
+        background-color: #c280a2;
+        clip-path: polygon(
+          50% 0%,
+          60% 40%,
+          100% 50%,
+          60% 60%,
+          50% 100%,
+          40% 60%,
+          0% 50%,
+          40% 40%
+        );
+      }
+      .shape1 {
+        height: 200px;
+        width: 400px;
+        background-color: #adc5f3;
+        clip-path: polygon(
+          0% 25%,
+          50% 25%,
+          50% 0%,
+          100% 50%,
+          50% 100%,
+          50% 75%,
+          0% 75%
+        );
+      }
+      .shape2 {
+        height: 200px;
+        width: 400px;
+        background-color: #f8a1f3;
+        clip-path: polygon(
+          0% 50%,
+          50% 0%,
+          50% 25%,
+          100% 25%,
+          100% 75%,
+          50% 75%,
+          50% 100%
+        );
+      }
+      .shape3 {
+        height: 200px;
+        width: 150px;
+        background-color: #7f8ea8;
+        clip-path: polygon(
+          50% 0%,
+          100% 40%,
+          80% 40%,
+          80% 100%,
+          20% 100%,
+          20% 40%,
+          0% 40%
+        );
+      }
+      .shape4 {
+        height: 200px;
+        width: 150px;
+        background-color: #faf38b;
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          75% 50%,
+          100% 50%,
+          50% 100%,
+          0% 50%,
+          25% 50%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="star"></div>
+      <div class="triangle"></div>
+      <div class="main"></div>
+      <div class="main2"></div>
+      <div class="main3"></div>
+    </section>
+    <section>
+      <div class="shape1"></div>
+      <div class="shape2"></div>
+      <div class="shape3"></div>
+      <div class="shape4"></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <style>
+      table {
+        padding: 20px;
+      }
+      td {
+        padding: 10px;
+      }
+      input {
+        padding: 8px;
+      }
+      select {
+        padding: 2px 4px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <form action="">
+        <h1 style="margin: 0; padding: 0 20px">Admissions Form</h1>
+        <span style="padding: 20px"
+          >Enter Your Admission Information Below</span
+        >
+        <br />
+        <hr />
+        <tr>
+          <td>
+            <label for="" style="font-weight: bold; font-size: 14px"
+              >Name <span style="color: red">*</span></label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 0">
+            <label for="">First Name</label><br />
+            <input
+              type="text"
+              placeholder="Enter name"
+              required
+              pattern="[A-za-z]{3,8}"
+              name=""
+              value=""
+            />
+          </td>
+          <td style="padding-top: 0">
+            <label for="">Middle Name</label> <br />
+            <input
+              type="text"
+              required
+              placeholder="Middle Name"
+              pattern="[A-Za-z]{3,7}"
+              name=""
+              value=""
+            />
+          </td>
+          <td style="padding-top: 0">
+            <label for="">Last Name</label> <br />
+            <input type="text" required pattern="[A-Za-z]{3,8}" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="" style="font-weight: bold; font-size: 14px"
+              >Birth Date<span style="color: red">*</span></label
+            >
+            <br />
+            <select name="" id="">
+              <option value="">Month</option>
+            </select>
+
+            <select name="" id="">
+              <option value="">Day</option>
+            </select>
+
+            <select name="" id="">
+              <option value="">Year</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="" style="font-weight: bold; font-size: 14px"
+              >Gender<span style="color: red">*</span></label
+            >
+            <br />
+            <input type="radio" name="gender" />Male <br />
+            <input type="radio" name="gender" />Female <br />
+            <input type="radio" name="gender" />Other
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="" style="font-weight: bold; font-size: 14px"
+              >Are you Hispanic Or Latino?<span style="color: red"
+                >*</span
+              ></label
+            >
+            <br />
+            <input type="radio" name="x" />Yes <br />
+            <input type="radio" name="x" />No <br />
+            <input type="radio" name="x" />Decline Answer
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" /></td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

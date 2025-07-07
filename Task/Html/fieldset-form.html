@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        padding: 5px 0;
+        border: 2px solid black;
+      }
+
+      fieldset {
+        width: 350px;
+        border: 2px solid black;
+      }
+      label {
+        margin-right: 20px;
+      }
+      table {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Customer</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="">Name <span style="color: red">*</span></label>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">E-mail <span style="color: red">*</span></label>
+            </td>
+            <td><input type="email" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Investment</label></td>
+            <td>
+              <select
+                name=""
+                id=""
+                style="padding: 5px 70px; border: 2px solid black"
+              ></select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for=""
+                >Date Joined <span style="color: red">*</span></label
+              >
+            </td>
+            <td><input type="date" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Active</label>
+            </td>
+            <td>
+              <input type="checkbox" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <div style="margin: 20px 0">
+        <input type="submit" value="Ok" style="padding: 5px 15px" />
+        <input type="reset" value="Cancel" style="padding: 5px 20px" />
+      </div>
+    </form>
+  </body>
+</html>
