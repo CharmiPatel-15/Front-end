@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/Task1/contact.css" />
+  </head>
+  <body>
+    <table>
+      <form action="" method="post">
+        <caption>
+          <h1>Contact Form</h1>
+        </caption>
+        <tr>
+          <td>
+            <label for="">First Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="First Name"
+              required
+              pattern="[A-Za-z]{3,7}"
+            />
+          </td>
+          <td>
+            <label for="">Last Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Last Name"
+              required
+              pattern="[A-Za-z]{3,7}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">E-mail</label>
+          </td>
+          <td class="td" colspan="3">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z]+.[a-z]{2,}$"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Phone Number</label>
+          </td>
+          <td class="td" colspan="3">
+            <input
+              type="tel"
+              placeholder="Enter Your Number"
+              required
+              pattern="[6-9][0-9]{9}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Select Your Courses</label>
+          </td>
+          <td class="td" colspan="3">
+            <select name="" id="">
+              <option value="" hidden>Select Course</option>
+              <option value="">Web Designing</option>
+              <option value="">Front-end Developer</option>
+              <option value="">Back-end Developer</option>
+              <option value="">Full-stack Developer</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Address</label>
+          </td>
+          <td class="td" colspan="3">
+            <textarea
+              name=""
+              id=""
+              placeholder="Enter Your Address Here........."
+              cols="20"
+              rows="5"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" class="submit">
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

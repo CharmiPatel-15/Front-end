@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .icon {
+    display: block;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .header-content .img {
+    width: 200px;
+  }
+
+  #black-coffee .row {
+    display: block;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

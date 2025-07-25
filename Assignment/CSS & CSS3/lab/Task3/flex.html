@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .flexbox {
+        font-size: clamp(16px, 6vw, 30px);
+        font-weight: 800;
+        color: #fff;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        padding: 25px;
+        text-align: center;
+        background-color: #013d5b;
+        border: 2px solid;
+      }
+      .flex {
+        display: flex;
+        width: 100%;
+      }
+      .sidebar {
+        background-color: #325175;
+        width: 30%;
+        text-align: center;
+        padding: 20px;
+        border: 2px solid;
+        height: 500px;
+      }
+
+      .maincontent {
+        background-color: #37416a;
+        width: 70%;
+        text-align: center;
+        padding: 20px;
+        border: 2px solid;
+        height: 500px;
+      }
+
+      footer {
+        padding: 25px;
+        text-align: center;
+        background-color: #003e70;
+        border: 2px solid;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .flex {
+          flex-direction: column;
+        }
+        .sidebar {
+          width: 100%;
+          height: 300px;
+        }
+        .maincontent {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <header>Header</header>
+      <div class="flex">
+        <div class="sidebar">Sidebar</div>
+        <div class="maincontent">Main Content</div>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
